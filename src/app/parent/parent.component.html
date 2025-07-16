@@ -1,0 +1,5 @@
+
+<h1>Parent to  Child Communication</h1>
+<app-child [message]="parentMessage" (reply)="receiveReply($event)" ></app-child>
+
+<p *ngIf="childReply"> Here is msg: {{childReply}}</p>
